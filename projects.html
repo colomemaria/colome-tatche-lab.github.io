@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Colomé-Tatché Lab</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Colomé-Tatché Lab</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="container">
-                <h1>Colomé-Tatché Lab</h1>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html" class="active">Projects</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <h1 class="nav-brand">Colomé-Tatché Lab</h1>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="people.html" class="nav-link">People</a></li>
+          <li class="nav-item"><a href="projects.html" class="nav-link active">Projects</a></li>
+          <li class="nav-item"><a href="publications.html" class="nav-link">Publications</a></li>
+          <li class="nav-item"><a href="news.html" class="nav-link">News</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-    <main>
-        <div class="container">
-            <section class="projects-header">
-                <h2>Our Projects</h2>
-                <p>Explore our open-source projects and research repositories</p>
-            </section>
+  <main>
+    <div class="container">
+      <section class="projects-header">
+        <h2>Our Projects</h2>
+        <p>Explore our open-source projects and research repositories</p>
+      </section>
 
-            <div id="loading" class="loading">
-                <p>Loading projects...</p>
-            </div>
+      <div id="loading" class="loading">
+        <p>Loading projects...</p>
+      </div>
 
-            <div id="error" class="error" style="display: none;">
-                <p>Failed to load projects. Please try again later.</p>
-            </div>
+      <div id="error" class="error" style="display: none;">
+        <p>Failed to load projects. Please try again later.</p>
+      </div>
 
-            <div id="projects-container" class="projects-grid">
-                <!-- Projects will be loaded here dynamically -->
-            </div>
-        </div>
-    </main>
+      <div id="projects-container" class="projects-grid">
+        <!-- Projects will be loaded here dynamically -->
+      </div>
+    </div>
+  </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Colomé-Tatché Lab. All rights reserved.</p>
-        </div>
-    </footer>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Colomé-Tatché Lab. All rights reserved.</p>
+    </div>
+  </footer>
 
-    <script src="projects.js"></script>
+  <script src="projects.js"></script>
 </body>
 </html>
