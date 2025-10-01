@@ -1,32 +1,37 @@
 # colome-tatche-lab.github.io
 
-Lab website for the Colomé-Tatché Lab, featuring computational biology and single-cell epigenomics research.
+Research laboratory website for the Colomé Tatché Lab.
 
-## Features
+## Structure
 
-- **Home Page**: Introduction to the lab and research focus
-- **Projects Page**: Automatically displays all public repositories from the colomemaria GitHub organization
+- `_config.yml` - Jekyll configuration
+- `index.md` - Homepage
+- `people.md` - Team members page with placeholders
+- `assets/images/` - Photo placeholders for team members
+- `Gemfile` - Ruby dependencies for GitHub Pages
 
-## How It Works
+## People Page
 
-The Projects page dynamically fetches repository data from the GitHub API, displaying:
-- Repository names with links
-- Descriptions
-- Star and fork counts
-- Programming language used
+The people page includes placeholders for:
+- **Principal Investigator**: Dr. Maria Colomé Tatché
+- **PhD Students**: 2 placeholder entries
+- **Postdoctoral Researchers**: 2 placeholder entries
 
-The page automatically filters out archived repositories and the website repository itself, sorting projects by popularity (stars) and recency.
+Each person entry includes:
+- Photo placeholder (200x200 SVG)
+- Name
+- Position
+- Bio section (to be filled in)
+- Email (to be filled in)
 
-## Development
+## Customization
 
-To test the website locally:
+To add real photos and information:
+1. Replace the SVG placeholder images in `assets/images/` with actual photos (recommended size: 200x200 pixels)
+2. Update the names, bios, and email addresses in `people.md`
+3. Add or remove person entries as needed
 
-```bash
-python3 -m http.server 8000
-```
+## GitHub Pages
 
-Then visit `http://localhost:8000` in your browser.
+This site is designed to work with GitHub Pages using the `minima` theme. After pushing changes, the site will automatically build and deploy.
 
-## Deployment
-
-This site is automatically deployed via GitHub Pages from the `main` branch.
