@@ -34,3 +34,4 @@ To add real photos and information:
 ## GitHub Pages
 
 This site is designed to work with GitHub Pages using the `minima` theme. After pushing changes, the site will automatically build and deploy.
+

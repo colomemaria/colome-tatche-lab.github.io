@@ -1,12 +1,23 @@
-# Site settings
-title: "Colomé Tatché Lab"
-description: "Research laboratory led by Dr. Maria Colomé Tatché"
-baseurl: ""
+# Site Settings
+title: "Colomé-Tatché Lab"
+name: "Colomé-Tatché Lab"
+description: "Research in single-cell multiomics, CNV detection, and computational biology"
 url: "https://colomemaria.github.io"
+baseurl: ""
+repository: "colomemaria/colome-tatche-lab.github.io"
 
-# Build settings
-markdown: kramdown
-theme: minima
+# Theme Settings
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: "default"
+
+# Site Author
+author:
+  name: "Colomé-Tatché Lab"
+  bio: "Single-cell multiomics, CNV detection, and computational biology"
+
+# Reading Files
+include:
+  - _pages
 
 # Collections
 collections:
@@ -14,7 +25,29 @@ collections:
     output: true
     permalink: /people/:path/
 
-# Navigation
-header_pages:
-  - index.md
-  - people.md
+# Defaults
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: false
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-include-cache
+  - jekyll-gist
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 5
+timezone: Europe/Berlin
+
+# Build settings
+markdown: kramdown
