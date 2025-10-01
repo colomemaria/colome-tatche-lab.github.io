@@ -19,6 +19,12 @@ author:
 include:
   - _pages
 
+# Collections
+collections:
+  people:
+    output: true
+    permalink: /people/:path/
+
 # Defaults
 defaults:
   # _pages
